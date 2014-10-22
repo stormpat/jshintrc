@@ -2,12 +2,12 @@
   // .JSHINTRC
   // Base JavaScript linting options for my projects.
   // Using jshint v2.5.2
+  // Edited 22.10.2014
 
   // RULES
   "laxcomma":       true,   // allow comma first style
   "es3":            true,   // when old IE browsers needs to be supported
-  "bitwise":        true,   // prohibits the use of bitwise operators such as ^ (XOR), | (OR) and others
-  //"camelcase":    true,   // force all variable names to use either camelCase style or UPPER_CASE with underscores
+  "bitwise":        true,   // prohibits the use of bitwise operators such as ^ (XOR), | (OR) and others//"camelcase":    true,// force all variable names to use either camelCase style or UPPER_CASE with underscores
   "curly":          true,   // requires you to always put curly braces around blocks in loops and conditionals
   "eqeqeq":         true,   // prohibits the use of == and != in favor of === and !==
   "forin":          true,   // requires all `for in` loops to filter object's items with `hasOwnProperty()`
@@ -26,15 +26,15 @@
   "trailing":       true,   // makes it an error to leave a trailing whitespace in your code
   "maxparams":      4,      // set the max number of formal parameters allowed per function
   "maxdepth":       3,      // control how nested do you want your blocks to be
-  "maxcomplexity":  10,      // control cyclomatic complexity throughout your code
-  "maxlen":         120,     // set the maximum length of a line
+  "maxcomplexity":  10,     // control cyclomatic complexity throughout your code
+  "maxlen":         120,    // set the maximum length of a line
 
-  // ENVIRONMENTS
+// ENVIRONMENTS
   "devel":          true,   // Enable poor mans debug (console, alerts etc.)
   "jquery":         true,   // defines globals exposed by jQuery
   "node":           true,   // defines nodejs globals
   "browser":        true,   // defines browser globals
-  "nonstandard":    false   //
+  "nonstandard":    false   // dissalow non-standard (but widely adopted) globals
   "globals": {
     "ko":           true,   // defines globals exposed by Knockoutjs
     "_":            true    // defines globals exposed by lodash/underscore
