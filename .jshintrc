@@ -1,43 +1,84 @@
 {
-  // .JSHINTRC
-  // Base JavaScript linting options for my projects.
-  // Using jshint v2.5.2
-  // Edited 22.10.2014
+  // Base JavaScript linting settings.
+  // Documentation at: http://www.jshint.com/docs/options/
 
-  // RULES
-  "laxcomma":       true,   // allow comma first style
-  "es3":            true,   // when old IE browsers needs to be supported
-  "bitwise":        true,   // prohibits the use of bitwise operators such as ^ (XOR), | (OR) and others//"camelcase":    true,// force all variable names to use either camelCase style or UPPER_CASE with underscores
-  "curly":          true,   // requires you to always put curly braces around blocks in loops and conditionals
-  "eqeqeq":         true,   // prohibits the use of == and != in favor of === and !==
-  "forin":          true,   // requires all `for in` loops to filter object's items with `hasOwnProperty()`
-  "immed":          true,   // prohibits the use of immediate function invocations without wrapping them in parentheses
-  "indent":         2,      // enforces specific tab width
-  "latedef":        true,   // prohibits the use of a variable before it was defined
-  "newcap":         true,   // requires you to capitalize names of constructor functions
-  "noarg":          true,   // prohibits the use of `arguments.caller` and `arguments.callee`
-  "noempty":        true,   // warns when you have an empty block in your code
-  "nonew":          true,   // prohibits the use of constructor functions for side-effects
-  "plusplus":       false,  // prohibits the use of unary increment and decrement operators
-  "quotmark":       true,   // enforces the consistency of quotation marks used throughout your code
-  "undef":          true,   // prohibits the use of explicitly undeclared variables
-  "unused":         true,   // warns when you define and never use your variables
-  "strict":         true,   // requires all functions to run in ECMAScript 5's strict mode
-  "trailing":       true,   // makes it an error to leave a trailing whitespace in your code
-  "maxparams":      4,      // set the max number of formal parameters allowed per function
-  "maxdepth":       3,      // control how nested do you want your blocks to be
-  "maxcomplexity":  10,     // control cyclomatic complexity throughout your code
-  "maxlen":         120,    // set the maximum length of a line
+  // ENFORCE
+  "bitwise":        true,
+  "camelcase":      true,
+  "curly":          true,
+  "eqeqeq":         true,
+  "es3":            true,
+  "freeze":         true,
+  "forin":          true,
+  "immed":          true,
+  "indent":         2,
+  "latedef":        true,
+  "newcap":         true,
+  "noarg":          true,
+  "noempty":        true,
+  "nonew":          true,
+  "plusplus":       true,
+  "quotmark":       "single",
+  "undef":          true,
+  "unused":         true,
+  "strict":         true,
+  "trailing":       true,
+  "maxparams":      4,
+  "maxdepth":       3,    // TODO
+  "maxstatements":  10,   // TODO
+  "maxcomplexity":  10,   // TODO
+  "maxlen":         120,
 
-// ENVIRONMENTS
-  "devel":          true,   // Enable poor mans debug (console, alerts etc.)
-  "jquery":         true,   // defines globals exposed by jQuery
-  "node":           true,   // defines nodejs globals
-  "browser":        true,   // defines browser globals
-  "nonstandard":    false   // dissalow non-standard (but widely adopted) globals
+  // RELAX
+  "asi":            false,
+  "boss":           false,
+  "debug":          false,
+  "eqnull":         false,
+  "esnext":         false,
+  "evil":           false,
+  "expr":           false,
+  "funcscope":      false,
+  "globalstrict":   false,
+  "iterator":       false,
+  "lastsemic":      false,
+  "laxbreak":       false,
+  "laxcomma":       true,
+  "loopfunc":       false,
+  "moz":            false,
+  "multistr":       false,
+  "proto":          false,
+  "scripturl":      false,
+  "smarttabs":      false,
+  "shadow":         false,
+  "sub":            false,
+  "supernew":       false,
+  "validthis":      false,
+  "noyield":        false,
+
+  // ENVIRONMENTS
+  "browser":        true,
+  "couch":          false
+  "devel":          true,
+  "dojo":           false,
+  "jquery":         true,
+  "mootools":       false,
+  "node":           true,
+  "nonstandard":    false,
+  "phantom":        false,
+  "prototypejs":    false,
+  "rhino":          false,
+  "worker":         true,
+  "wsh":            false,
+  "yui":            false,
+
+  // GLOBALS
   "globals": {
-    "ko":           true,   // defines globals exposed by Knockoutjs
-    "_":            true    // defines globals exposed by lodash/underscore
-  }
+    "_":            true
+  },
 
+  // LEGACY
+  "nomen":          false,
+  "onevar":         false,
+  "passfail":       false,
+  "white":          false
 }
