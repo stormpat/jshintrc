@@ -2,17 +2,12 @@
   // .JSHINTRC
   // Base JavaScript linting options for my projects.
   // Using jshint v2.5.2
-  // Based on:
-  // linting options by appendto (https://github.com/appendto)
-  // http://www.elijahmanor.com/control-the-complexity-of-your-javascript-functions-with-jshint/
 
-  // RULES TO ENFORCE
-  // Some rules are per project basis, like es3 support.
-
+  // RULES
   "laxcomma":       true,   // allow comma first style
   "es3":            true,   // when old IE browsers needs to be supported
   "bitwise":        true,   // prohibits the use of bitwise operators such as ^ (XOR), | (OR) and others
-  "camelcase":      true,   // force all variable names to use either camelCase style or UPPER_CASE with underscores
+  //"camelcase":    true,   // force all variable names to use either camelCase style or UPPER_CASE with underscores
   "curly":          true,   // requires you to always put curly braces around blocks in loops and conditionals
   "eqeqeq":         true,   // prohibits the use of == and != in favor of === and !==
   "forin":          true,   // requires all `for in` loops to filter object's items with `hasOwnProperty()`
@@ -31,14 +26,15 @@
   "trailing":       true,   // makes it an error to leave a trailing whitespace in your code
   "maxparams":      4,      // set the max number of formal parameters allowed per function
   "maxdepth":       3,      // control how nested do you want your blocks to be
-  "maxstatements":  4,      // set the max number of statements allowed per function
-  "maxcomplexity":  5,      // control cyclomatic complexity throughout your code
-  "maxlen":         99,     // set the maximum length of a line
+  "maxcomplexity":  10,      // control cyclomatic complexity throughout your code
+  "maxlen":         120,     // set the maximum length of a line
 
   // ENVIRONMENTS
-  // Add supports for globals 3rd party libs expose.
   "devel":          true,   // Enable poor mans debug (console, alerts etc.)
   "jquery":         true,   // defines globals exposed by jQuery
+  "node":           true,   // defines nodejs globals
+  "browser":        true,   // defines browser globals
+  "nonstandard":    false   //
   "globals": {
     "ko":           true,   // defines globals exposed by Knockoutjs
     "_":            true    // defines globals exposed by lodash/underscore
